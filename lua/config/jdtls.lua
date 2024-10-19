@@ -40,7 +40,7 @@ end
 
 local function get_workspace()
     -- Get the home directory of your operating system
-    local home = os.getenv "/Users/karansethia"
+    local home = os.getenv "HOME"
     -- Declare a directory where you would like to store project information
     local workspace_path = home .. "/Documents/"
     -- Determine the project name
