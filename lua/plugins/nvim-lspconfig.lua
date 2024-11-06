@@ -89,18 +89,17 @@ return {
         },
       },
     }
-    local capabilities = require("cmp_nvim_lsp").default_capabilities()
     lspconfig.ts_ls.setup({
-      capabilities = capabilities,
+      capabilities = lsp_capabilities,
     })
 
     lspconfig.tailwindcss.setup({
-      capabilities = capabilities,
+      capabilities = lsp_capabilities,
       filetypes = { "typescriptreact", "javascriptreact" },
     })
 
     lspconfig.emmet_ls.setup({
-      capabilities = capabilities,
+      capabilities = lsp_capabilities,
       filetypes = {
         "html",
         "typescriptreact",
